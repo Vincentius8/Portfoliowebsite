@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>John Vincent Pangilinan — Junior Software Engineer &amp; Web Developer</title>
+  <meta name="description" content="Junior software engineer and web developer in Biñan, Laguna. I build full-stack web systems in PHP, Laravel, MySQL and JavaScript, from database to deployment. Available for full-time roles and freelance projects.">
+
+  
+  <link rel="canonical" href="https://portfolio-five-plum-34.vercel.app/">
+  <meta property="og:url" content="https://portfolio-five-plum-34.vercel.app/">
+  <meta property="og:image" content="https://portfolio-five-plum-34.vercel.app/assets/img/og-image.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="John Vincent Pangilinan — Junior Software Engineer & Web Developer">
+  <meta property="og:description" content="Full-stack web systems for small businesses and schools, from database to deployment.">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="John Vincent Pangilinan — junior software engineer and web developer.">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta name="theme-color" content="#fbfbfc" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b0d11" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  
+  <script>
+    try {
+      var t = localStorage.getItem('jvp-theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="assets/js/main.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "John Vincent Pangilinan",
+    "jobTitle": "Junior Software Engineer & Web Developer",
+    "email": "mailto:johnvincentppangilinan@gmail.com",
+    "url": "https://portfolio-five-plum-34.vercel.app/",
+    "address": { "@type": "PostalAddress", "addressLocality": "Biñan", "addressRegion": "Laguna", "addressCountry": "PH" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Trimex Colleges" },
+    "knowsAbout": ["PHP", "Laravel", "JavaScript", "React", "MySQL", "HTML5", "CSS3", "Tailwind CSS", "Bootstrap", "Git"],
+    "sameAs": [
+      "https://www.linkedin.com/in/johnvincentpangilinan/",
+      "https://github.com/Vincentius8",
+      "https://t.me/Vincenzouu"
+    ]
+  }
+  </script>
+</head>
+
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="wrap site-header__inner">
+      <a class="brand" href="#top"><span class="brand__prompt" aria-hidden="true">~/</span>john-vincent<span class="visually-hidden"> Pangilinan — home</span><span class="brand__cursor" aria-hidden="true"></span></a>
+
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="site-nav__list" role="list">
+          <li><a href="#work"><span aria-hidden="true">./</span>work</a></li>
+          <li><a href="#about"><span aria-hidden="true">./</span>about</a></li>
+          <li><a href="#stack"><span aria-hidden="true">./</span>stack</a></li>
+          <li><a href="#experience"><span aria-hidden="true">./</span>experience</a></li>
+          <li><a href="#contact"><span aria-hidden="true">./</span>contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-tools">
+        <div class="theme-switch" role="group" aria-label="Colour theme">
+          <button type="button" data-theme-set="light" aria-pressed="false">light</button>
+          <span aria-hidden="true">/</span>
+          <button type="button" data-theme-set="dark" aria-pressed="false">dark</button>
+        </div>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle>
+          <span class="menu-toggle__open">menu</span><span class="menu-toggle__close">close</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <nav aria-label="Primary">
+      <ol class="mobile-menu__list" role="list">
+        <li style="--i: 0"><a href="#work"><span>01</span><span class="dot-slash" aria-hidden="true">./</span>work</a></li>
+        <li style="--i: 1"><a href="#about"><span>02</span><span class="dot-slash" aria-hidden="true">./</span>about</a></li>
+        <li style="--i: 2"><a href="#stack"><span>03</span><span class="dot-slash" aria-hidden="true">./</span>stack</a></li>
+        <li style="--i: 3"><a href="#experience"><span>04</span><span class="dot-slash" aria-hidden="true">./</span>experience</a></li>
+        <li style="--i: 4"><a href="#contact"><span>05</span><span class="dot-slash" aria-hidden="true">./</span>contact</a></li>
+      </ol>
+    </nav>
+    <div class="mobile-menu__foot">
+      <div class="theme-switch" role="group" aria-label="Colour theme">
+        <button type="button" data-theme-set="light" aria-pressed="false">light</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" data-theme-set="dark" aria-pressed="false">dark</button>
+      </div>
+      <div class="mobile-menu__links">
+        <a href="mailto:johnvincentppangilinan@gmail.com">email</a>
+        <a href="assets/files/john-vincent-pangilinan-cv.pdf" download="John-Vincent-Pangilinan-CV.pdf">résumé.pdf</a>
+        <a href="https://github.com/Vincentius8" target="_blank" rel="noopener">github<span class="visually-hidden"> (opens in a new tab)</span></a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+
+    
+    <section class="hero" id="intro" aria-labelledby="hero-title">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="hero__status" data-intro style="--i: 0"><span class="pulse" aria-hidden="true"></span>Available — full-time &amp; freelance</p>
+          <h1 class="hero__title" id="hero-title" data-intro style="--i: 1">John Vincent Pangilinan</h1>
+          <p class="hero__role" data-intro style="--i: 2">Junior Software Engineer <span>&amp;</span> Web Developer</p>
+          <p class="hero__lead lead" data-intro style="--i: 3">I build full&#8209;stack web systems, from database to deployment — so far an e-commerce store with GCash payments, a library system with RFID attendance, and a learning platform for Java and C++.</p>
+          <div class="hero__actions" data-intro style="--i: 4">
+            <a class="btn btn--primary" href="#work">View projects
+              <svg class="icon icon--down" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v11M3.5 9l4.5 4.5L12.5 9"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="#contact">Get in touch
+              <svg class="icon icon--right" viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 8h11M9 3.5L13.5 8 9 12.5"/></svg>
+            </a>
+          </div>
+          <dl class="hero__meta kv" data-intro style="--i: 5">
+            <div><dt>location</dt><dd>Biñan, Laguna, PH · <span data-clock data-tz="Asia/Manila" data-suffix="GMT+8">GMT+8</span></dd></div>
+            <div><dt>focus</dt><dd>PHP · Laravel · MySQL · JavaScript</dd></div>
+            <div><dt>education</dt><dd>BSIT, Trimex Colleges · Dean’s Lister 2024</dd></div>
+          </dl>
+        </div>
+
+        <figure class="window hero__term" data-intro style="--i: 3" aria-label="Terminal summary of John’s profile">
+          <div class="window__bar"><span class="window__dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="window__title">john@portfolio: ~</span><span class="window__meta">zsh</span></div>
+          <div class="term__body">
+            <p style="--n: 0"><span class="term__ps" aria-hidden="true">$ </span>whoami</p>
+            <p style="--n: 1" class="term__out">john-vincent-pangilinan</p>
+            <p style="--n: 2"><span class="term__ps" aria-hidden="true">$ </span>cat role.txt</p>
+            <p style="--n: 3" class="term__out">Junior Software Engineer · Web Developer</p>
+            <p style="--n: 4"><span class="term__ps" aria-hidden="true">$ </span>ls projects/</p>
+            <p style="--n: 5" class="term__out"><span class="term__dir">jar-garments/</span>  <span class="term__dir">codelearn/</span>  <span class="term__dir">trimex-library/</span></p>
+            <p style="--n: 6"><span class="term__ps" aria-hidden="true">$ </span>cat stack.txt</p>
+            <p style="--n: 7" class="term__out">PHP · Laravel · JavaScript · React · MySQL · Tailwind</p>
+            <p style="--n: 8"><span class="term__ps" aria-hidden="true">$ </span>echo $STATUS</p>
+            <p style="--n: 9" class="term__ok">available — full-time &amp; freelance</p>
+            <p style="--n: 10"><span class="term__ps" aria-hidden="true">$ </span><span class="cursor" aria-hidden="true"></span></p>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="wrap">
+        <header class="section-head" data-reveal>
+          <p class="section-head__bar"><span class="section-head__index">01</span><span>~/work</span><span class="section-head__rule" aria-hidden="true"></span><span class="section-head__meta">3 systems · 2024–2025</span></p>
+          <h2 class="section-head__title" id="work-title">Selected work</h2>
+        </header>
+
+        <p class="section-intro lead" data-reveal>Three systems, each written up the way I’d walk your team through it: the problem, how it was built and what changed.</p>
+
+        <ol class="repo-grid" role="list">
+          <li class="repo" data-reveal>
+            <figure class="repo__media">
+              <img src="assets/img/work/jar-garments/cover-800.webp"
+                   srcset="assets/img/work/jar-garments/cover-800.webp 800w, assets/img/work/jar-garments/cover-1200.webp 1200w"
+                   sizes="(min-width: 64em) 31vw, (min-width: 48em) 40vw, calc(100vw - 2.5rem)"
+                   width="1600" height="1000" loading="lazy" decoding="async"
+                   alt="JAR Garments storefront: the JAR wordmark over close-up rolls of fabric, with home, search and account buttons along the bottom.">
+            </figure>
+            <div class="repo__body">
+              <p class="repo__path">~/work/<span>jar-garments</span></p>
+              <h3 class="repo__title"><a class="repo__link" href="work/jar-garments.html">JAR Garments</a></h3>
+              <p class="repo__desc">E-commerce system with GCash payments, order tracking and monthly &amp; yearly sales analytics for a custom-garment business.</p>
+              <ul class="langs" role="list" aria-label="Built with">
+                <li><span class="langs__dot" style="--c: #4f5d95" aria-hidden="true"></span>PHP</li>
+                <li><span class="langs__dot" style="--c: #4479a1" aria-hidden="true"></span>MySQL</li>
+                <li><span class="langs__dot" style="--c: #f1e05a" aria-hidden="true"></span>JavaScript</li>
+                <li><span class="langs__dot" style="--c: #7952b3" aria-hidden="true"></span>Bootstrap</li>
+                <li><span class="langs__dot" style="--c: #007dfe" aria-hidden="true"></span>GCash API</li>
+              </ul>
+              <p class="repo__foot"><span>freelance · 2025</span><span class="repo__cta" aria-hidden="true">read case study <svg class="icon" viewBox="0 0 16 16"><path d="M2.5 8h11M9 3.5L13.5 8 9 12.5"/></svg></span></p>
+            </div>
+          </li>
+
+          <li class="repo" data-reveal style="--delay: 80ms">
+            <figure class="repo__media">
+              <img src="assets/img/work/codelearn/cover-800.webp"
+                   srcset="assets/img/work/codelearn/cover-800.webp 800w, assets/img/work/codelearn/cover-1200.webp 1200w"
+                   sizes="(min-width: 64em) 31vw, (min-width: 48em) 40vw, calc(100vw - 2.5rem)"
+                   width="1600" height="1000" loading="lazy" decoding="async"
+                   alt="CodeLearn landing page: the headline “Coding is the future. Start your journey now.” with Get started and Learn more buttons beside an illustration of two people at a large screen.">
+            </figure>
+            <div class="repo__body">
+              <p class="repo__path">~/work/<span>codelearn</span></p>
+              <h3 class="repo__title"><a class="repo__link" href="work/codelearn.html">CodeLearn</a></h3>
+              <p class="repo__desc">Learning platform for Java and C++: 76 lessons, timed quizzes graded on the server, an in-browser code runner and progress tracking.</p>
+              <ul class="langs" role="list" aria-label="Built with">
+                <li><span class="langs__dot" style="--c: #4f5d95" aria-hidden="true"></span>PHP (MVC)</li>
+                <li><span class="langs__dot" style="--c: #4479a1" aria-hidden="true"></span>MySQL</li>
+                <li><span class="langs__dot" style="--c: #f1e05a" aria-hidden="true"></span>JavaScript</li>
+                <li><span class="langs__dot" aria-hidden="true"></span>JDoodle API</li>
+              </ul>
+              <p class="repo__foot"><span>capstone · 2024–25</span><span class="repo__cta" aria-hidden="true">read case study <svg class="icon" viewBox="0 0 16 16"><path d="M2.5 8h11M9 3.5L13.5 8 9 12.5"/></svg></span></p>
+            </div>
+          </li>
+
+          <li class="repo" data-reveal style="--delay: 160ms">
+            <figure class="repo__media">
+              <img src="assets/img/work/trimex-library/cover-800.webp"
+                   srcset="assets/img/work/trimex-library/cover-800.webp 800w, assets/img/work/trimex-library/cover-1200.webp 1200w"
+                   sizes="(min-width: 64em) 31vw, (min-width: 48em) 40vw, calc(100vw - 2.5rem)"
+                   width="1600" height="1000" loading="lazy" decoding="async"
+                   alt="Trimex Library home page: “Welcome to Trimex Library” over a photo of three students reading together, under the Trimex Colleges navigation bar.">
+            </figure>
+            <div class="repo__body">
+              <p class="repo__path">~/work/<span>trimex-library</span></p>
+              <h3 class="repo__title"><a class="repo__link" href="work/trimex-library.html">Trimex Library System</a></h3>
+              <p class="repo__desc">Library management system with RFID attendance, school Gmail sign-in, online book reservations and usage analytics.</p>
+              <ul class="langs" role="list" aria-label="Built with">
+                <li><span class="langs__dot" style="--c: #4f5d95" aria-hidden="true"></span>PHP</li>
+                <li><span class="langs__dot" style="--c: #4479a1" aria-hidden="true"></span>MySQL (PDO)</li>
+                <li><span class="langs__dot" style="--c: #f1e05a" aria-hidden="true"></span>JavaScript</li>
+                <li><span class="langs__dot" aria-hidden="true"></span>RFID</li>
+              </ul>
+              <p class="repo__foot"><span>ojt · 2025</span><span class="repo__cta" aria-hidden="true">read case study <svg class="icon" viewBox="0 0 16 16"><path d="M2.5 8h11M9 3.5L13.5 8 9 12.5"/></svg></span></p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="wrap">
+        <header class="section-head" data-reveal>
+          <p class="section-head__bar"><span class="section-head__index">02</span><span>~/about</span><span class="section-head__rule" aria-hidden="true"></span><span class="section-head__meta">software engineer · web developer</span></p>
+          <h2 class="section-head__title" id="about-title">About</h2>
+        </header>
+
+        <div class="about">
+          <p class="about__statement" data-reveal><span class="tk-c" aria-hidden="true">//</span>Good systems feel obvious.<br><span class="tk-c" aria-hidden="true">//</span>Getting them there is the job.</p>
+
+          <figure class="portrait window" data-reveal>
+            <div class="window__bar"><span class="window__dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="window__title">portrait.webp</span></div>
+            <div class="portrait__frame">
+              <img src="assets/img/about/portrait-800.webp"
+                   srcset="assets/img/about/portrait-480.webp 480w, assets/img/about/portrait-800.webp 800w, assets/img/about/portrait-1080.webp 1080w"
+                   sizes="(min-width: 48em) min(30vw, 22rem), 22rem"
+                   width="1080" height="1350" loading="lazy" decoding="async"
+                   alt="Portrait of John Vincent Pangilinan in a dark suit and tie against a plain background.">
+            </div>
+          </figure>
+
+          <div class="about__main">
+            <div class="prose" data-reveal>
+              <p>I’m a junior software engineer and web developer from Biñan, Laguna, with a degree in Information Technology from Trimex Colleges. I build complete web systems: the database, the back end, the screens people use and the deployment.</p>
+              <p>So far that has meant real systems for real users — an e-commerce store that takes GCash payments for a garments business, a library system with RFID attendance for my college, and a learning platform for Java and C++ built as our capstone.</p>
+              <p>I care about the unglamorous parts that keep a system running: validation, security, clean data and code the next developer can read. Leading a census team for the Philippine Statistics Authority taught me that accurate data starts with how you collect it.</p>
+            </div>
+
+            <figure class="window code" data-reveal>
+              <div class="window__bar"><span class="window__dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="window__title">profile.ts</span><span class="window__meta">TypeScript</span></div>
+<pre class="code__body"><code><span class="tk-k">const</span> john = {
+  <span class="tk-p">role</span>: <span class="tk-s">"Junior Software Engineer"</span>,
+  <span class="tk-p">location</span>: <span class="tk-s">"Biñan, Laguna, PH"</span>,
+  <span class="tk-p">education</span>: <span class="tk-s">"BS Information Technology, Trimex Colleges"</span>,
+  <span class="tk-p">honors</span>: [<span class="tk-s">"Dean’s Lister 2024"</span>],
+  <span class="tk-p">certification</span>: <span class="tk-s">"TESDA NC II — EPAS"</span>,
+  <span class="tk-p">languages</span>: [<span class="tk-s">"English"</span>, <span class="tk-s">"Filipino"</span>],
+  <span class="tk-p">interests</span>: [<span class="tk-s">"system design"</span>, <span class="tk-s">"finance &amp; markets"</span>, <span class="tk-s">"history"</span>],
+  <span class="tk-p">available</span>: <span class="tk-n">true</span>,
+};</code></pre>
+            </figure>
+          </div>
+        </div>
+
+        <div class="process">
+          <div class="process__head" data-reveal>
+            <h3 class="process__title">How I work</h3>
+            <p class="process__intro">My pipeline, from idea to launch.</p>
+          </div>
+
+          <ol class="pipeline" role="list">
+            <li class="stage" data-reveal>
+              <div class="stage__head"><span class="stage__icon" aria-hidden="true"><svg class="icon" viewBox="0 0 16 16"><path d="M3.5 8.5l3 3 6-7"/></svg></span><h4 class="stage__name">Define</h4><span class="stage__step">01</span></div>
+              <p>Pin down the problem, the users and the requirements before any code is written.</p>
+            </li>
+            <li class="stage" data-reveal style="--delay: 60ms">
+              <div class="stage__head"><span class="stage__icon" aria-hidden="true"><svg class="icon" viewBox="0 0 16 16"><path d="M3.5 8.5l3 3 6-7"/></svg></span><h4 class="stage__name">Design</h4><span class="stage__step">02</span></div>
+              <p>Plan the system: the database schema, the modules and the flows that connect them.</p>
+            </li>
+            <li class="stage" data-reveal style="--delay: 120ms">
+              <div class="stage__head"><span class="stage__icon" aria-hidden="true"><svg class="icon" viewBox="0 0 16 16"><path d="M3.5 8.5l3 3 6-7"/></svg></span><h4 class="stage__name">Prototype</h4><span class="stage__step">03</span></div>
+              <p>Build a working version early, so feedback comes from something real.</p>
+            </li>
+            <li class="stage" data-reveal style="--delay: 180ms">
+              <div class="stage__head"><span class="stage__icon" aria-hidden="true"><svg class="icon" viewBox="0 0 16 16"><path d="M3.5 8.5l3 3 6-7"/></svg></span><h4 class="stage__name">Test</h4><span class="stage__step">04</span></div>
+              <p>Validate every input, check security and fix what breaks with real users.</p>
+            </li>
+            <li class="stage" data-reveal style="--delay: 240ms">
+              <div class="stage__head"><span class="stage__icon" aria-hidden="true"><svg class="icon" viewBox="0 0 16 16"><path d="M3.5 8.5l3 3 6-7"/></svg></span><h4 class="stage__name">Deliver</h4><span class="stage__step">05</span></div>
+              <p>Deploy it, document it and hand it over ready to run.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section" id="stack" aria-labelledby="stack-title">
+      <div class="wrap">
+        <header class="section-head" data-reveal>
+          <p class="section-head__bar"><span class="section-head__index">03</span><span>~/stack</span><span class="section-head__rule" aria-hidden="true"></span><span class="section-head__meta">14 tools</span></p>
+          <h2 class="section-head__title" id="stack-title">Tech stack</h2>
+        </header>
+
+        <p class="section-intro lead" data-reveal>What I build with, day to day.</p>
+
+        <ul class="stack-grid" role="list" data-reveal>
+          <li class="tech" style="--logo: url(https://cdn.jsdelivr.net/npm/simple-icons@14/icons/php.svg); --brand: #777bb4">
+            <span class="tech__mark" aria-hidden="true"><span class="tech__logo"></span></span>
+            <span class="tech__name">PHP</span>
+            <span class="tech__kind label">Language</span>
+          </li>
+          <li class="tech tech--js" style="--logo: url(https://cdn.jsdelivr.net/npm/simple-icons@14/icons/javascript.svg); --brand: #f7df1e">
+            <span class="tech__mark" aria-hidden="true"><span class="tech__logo"></span></span>
+            <span class="tech__name">JavaScript</span>
+            <span class="tech__kind label">Language</span>
+          </li>
+          <li class="tech" style="--logo: url(https://cdn.jsdelivr.net/npm/simple-icons@14/icons/html5.svg); --brand: #e34f26">
+            <span class="tech__mark" aria-hidden="true"><span class="tech__logo"></span></span>
+            <span class="tech__name">HTML5</span>
+            <span class="tech__kind label">Markup</span>
+          </li>
+          <li class="tech" style="--logo: url(https://cdn.jsdelivr.net/npm/simple-icons@14/icons/css3.svg); --brand: #1572b6; --brand-dark: #3d9be9">
+            <span class="tech__mark" aria-hidden="true"><span class="tech__logo"></span></span>
+            <span class="tech__name">CSS3</span>
+            <span class="tech__kind label">Styling</span>
+          </li>
+          <li class="tech" style="--logo: url(https://cdn.jsdelivr.net/npm/simple-icons@14/icons/laravel.svg); --brand: #ff2d20">
+            <span class="tech__mark" aria-hidden="true"><span class="tech__logo"></span></span>
+            <span class="tech__name">Laravel</span>
+            <span class="tech__kind label">PHP framework</span>
+          </li>
+          <li class="tech" style="--logo: url(https://cdn.jsdelivr.net/npm/simple-icons@14/icons/react.svg); --brand: #087ea4; --brand-dark: #61dafb">
+            <span class="tech__mark" aria-hidden="true"><span class="tech__logo"></span></span>
+            <span class="tech__name">React</span>
+            <span class="tech__kind label">UI library</span>
+          </li>
+          <li class="tech" style="--logo: url(https://cdn.jsdelivr.net/npm/simple-icons@14/icons/tailwindcss.svg); --brand: #06b6d4; --brand-dark: #38bdf8">
+            <span class="tech__mark" aria-hidden="true"><span class="tech__logo"></span></span>
+            <span class="tech__name">Tailwind CSS</span>
+            <span class="tech__kind label">CSS framework</span>
+          </li>
+          <li class="tech" style="--logo: url(https://cdn.jsdelivr.net/npm/simple-icons@14/icons/bootstrap.svg); --brand: #7952b3; --brand-dark: #9a73d6">
+            <span class="tech__mark" aria-hidden="true"><span class="tech__logo"></span></span>
+            <span class="tech__name">Bootstrap</span>
+            <span class="tech__kind label">CSS framework</span>
+          </li>
+          <li class="tech" style="--logo: url(https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/mysql/mysql-original.svg); --brand: #4479a1; --brand-dark: #5d9bcc">
+            <span class="tech__mark" aria-hidden="true"><span class="tech__logo"></span></span>
+            <span class="tech__name">MySQL</span>
+            <span class="tech__kind label">Database</span>
+          </li>
+          <li class="tech" style="--logo: url(https://cdn.jsdelivr.net/npm/simple-icons@14/icons/git.svg); --brand: #f05032">
+            <span class="tech__mark" aria-hidden="true"><span class="tech__logo"></span></span>
+            <span class="tech__name">Git</span>
+            <span class="tech__kind label">Version control</span>
+          </li>
+          <li class="tech" style="--logo: url(https://cdn.jsdelivr.net/npm/simple-icons@14/icons/github.svg); --brand: #181717; --brand-dark: #f0f6fc">
+            <span class="tech__mark" aria-hidden="true"><span class="tech__logo"></span></span>
+            <span class="tech__name">GitHub</span>
+            <span class="tech__kind label">Collaboration</span>
+          </li>
+          <li class="tech" style="--logo: url(https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/vscode/vscode-plain.svg); --brand: #007acc; --brand-dark: #23a9f2">
+            <span class="tech__mark" aria-hidden="true"><span class="tech__logo"></span></span>
+            <span class="tech__name">VS Code</span>
+            <span class="tech__kind label">Editor</span>
+          </li>
+          <li class="tech" style="--logo: url(https://cdn.jsdelivr.net/npm/simple-icons@14/icons/xampp.svg); --brand: #fb7a24">
+            <span class="tech__mark" aria-hidden="true"><span class="tech__logo"></span></span>
+            <span class="tech__name">XAMPP</span>
+            <span class="tech__kind label">Local server</span>
+          </li>
+          <li class="tech" style="--logo: url(https://cdn.jsdelivr.net/npm/simple-icons@14/icons/linux.svg); --brand: #d9a400; --brand-dark: #fcc624">
+            <span class="tech__mark" aria-hidden="true"><span class="tech__logo"></span></span>
+            <span class="tech__name">Linux</span>
+            <span class="tech__kind label">Operating system</span>
+          </li>
+          <li class="tech tech--also">
+            <p class="label">also</p>
+<pre class="code__body"><code><span class="tk-k">const</span> also = [<span class="tk-s">"MVC"</span>, <span class="tk-s">"PDO &amp; prepared statements"</span>, <span class="tk-s">"REST/JSON APIs"</span>, <span class="tk-s">"Auth &amp; sessions"</span>, <span class="tk-s">"GCash payments"</span>, <span class="tk-s">"RFID"</span>];</code></pre>
+          </li>
+        </ul>
+        <p class="stack-hint label" data-reveal>// hover — or tap — a tile to see its colour</p>
+      </div>
+    </section>
+
+    
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <div class="wrap">
+        <header class="section-head" data-reveal>
+          <p class="section-head__bar"><span class="section-head__index">04</span><span>~/experience</span><span class="section-head__rule" aria-hidden="true"></span><span class="section-head__meta">2024 — present</span></p>
+          <h2 class="section-head__title" id="experience-title">Experience</h2>
+        </header>
+
+        <div class="resume-cta panel" data-reveal>
+          <p class="resume-cta__text"><strong>The one-page version, for recruiters.</strong> <span>Roles, education and skills on a single page.</span></p>
+          <div class="resume-cta__actions">
+            <a class="btn btn--primary" href="assets/files/john-vincent-pangilinan-cv.pdf" download="John-Vincent-Pangilinan-CV.pdf"><span>Download résumé <small>(PDF, 48&nbsp;KB)</small></span>
+              <svg class="icon icon--down" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v8M4.5 7.5L8 11l3.5-3.5M3 13.5h10"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="https://www.linkedin.com/in/johnvincentpangilinan/" target="_blank" rel="noopener">LinkedIn<span class="visually-hidden"> (opens in a new tab)</span>
+              <svg class="icon icon--out" viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11l6-6M6 5h5v5"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="log-group">
+          <h3 class="log-group__title"><span>#</span> software &amp; web development</h3>
+          <ol class="gitlog" role="list">
+            <li class="commit commit--head" data-reveal>
+              <p class="commit__head"><span class="commit__hash" aria-hidden="true">3f9a1c2</span><span class="commit__ref" aria-hidden="true">HEAD → main</span><span class="commit__date"><time datetime="2025-05">May 2025</time> — <time datetime="2025-09">Sep 2025</time></span></p>
+              <h4 class="commit__msg">Web developer <span>@ JAR Garments · Freelance</span></h4>
+              <p class="commit__body">Built a custom e-commerce system — design selection, cart, GCash payments, order tracking and sales analytics — to handle real customer transactions.</p>
+            </li>
+            <li class="commit" data-reveal>
+              <p class="commit__head"><span class="commit__hash" aria-hidden="true">8c41e0b</span><span class="commit__date"><time datetime="2025-01">Jan 2025</time> — <time datetime="2025-04">Apr 2025</time></span></p>
+              <h4 class="commit__msg">Web developer (OJT) <span>@ Trimex Colleges, Biñan</span></h4>
+              <p class="commit__body">Built the library management system: RFID attendance logging, school Gmail sign-in, online book reservations and analytics on library usage.</p>
+            </li>
+            <li class="commit" data-reveal>
+              <p class="commit__head"><span class="commit__hash" aria-hidden="true">b72d5fa</span><span class="commit__date"><time datetime="2024-09">Sep 2024</time> — <time datetime="2025-04">Apr 2025</time></span></p>
+              <h4 class="commit__msg">System developer, capstone <span>@ Thesis project · Trimex Colleges</span></h4>
+              <p class="commit__body">CodeLearn, a learning platform for Java and C++. Contributed to system design, coding, testing and the technical presentation.</p>
+            </li>
+          </ol>
+        </div>
+
+        <div class="log-group">
+          <h3 class="log-group__title"><span>#</span> other experience</h3>
+          <ol class="gitlog" role="list">
+            <li class="commit" data-reveal>
+              <p class="commit__head"><span class="commit__hash" aria-hidden="true">e05b9d3</span><span class="commit__date"><time datetime="2025-10">Oct 2025</time> — <time datetime="2026-01">Jan 2026</time></span></p>
+              <h4 class="commit__msg">Sales associate <span>@ CLN Retail, Sta. Rosa</span></h4>
+              <p class="commit__body">Customer assistance, sales transactions and inventory support in a retail environment.</p>
+            </li>
+            <li class="commit" data-reveal>
+              <p class="commit__head"><span class="commit__hash" aria-hidden="true">41ac7e6</span><span class="commit__date"><time datetime="2024-06">Jun 2024</time> — <time datetime="2024-12">Dec 2024</time></span></p>
+              <h4 class="commit__msg">Team leader <span>@ Philippine Statistics Authority · POPCEN-CBMS</span></h4>
+              <p class="commit__body">Led and supervised a census team — coordinating tasks and keeping data accurate and compliant with government reporting standards.</p>
+            </li>
+          </ol>
+        </div>
+
+        <div class="log-group">
+          <h3 class="log-group__title"><span>#</span> education &amp; certification</h3>
+          <ol class="gitlog" role="list">
+            <li class="commit" data-reveal>
+              <p class="commit__head"><span class="commit__hash" aria-hidden="true">9d0f3b8</span><span class="commit__date">A.Y. 2024–2025</span></p>
+              <h4 class="commit__msg">BS Information Technology <span>@ Trimex Colleges, Biñan</span></h4>
+              <p class="commit__body">Dean’s Lister, 2024. Coursework in web development, database management, software engineering, and systems analysis &amp; design.</p>
+            </li>
+            <li class="commit" data-reveal>
+              <p class="commit__head"><span class="commit__hash" aria-hidden="true">c6e2a17</span><span class="commit__date">TESDA</span></p>
+              <h4 class="commit__msg">National Certificate II <span>@ Electronic Products Assembly &amp; Servicing (EPAS)</span></h4>
+              <p class="commit__body">Assembly and servicing of electronic products.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <header class="section-head" data-reveal>
+          <p class="section-head__bar"><span class="section-head__index">05</span><span>~/contact</span><span class="section-head__rule" aria-hidden="true"></span><span class="section-head__meta">Biñan, Laguna · GMT+8</span></p>
+          <h2 class="section-head__title" id="contact-title">Contact</h2>
+        </header>
+
+        <p class="contact__title" data-reveal>Let’s build something <span>that lasts.</span></p>
+
+        <div class="paths">
+          <div class="path panel" data-reveal>
+            <p class="path__label"># for recruiters &amp; hiring teams</p>
+            <h3 class="path__title">Hiring a junior software engineer or web developer?</h3>
+            <p>I’m looking for junior software engineer and junior web developer roles — on-site around Laguna and Metro Manila, hybrid or remote. Everything you need for a first screen:</p>
+            <ul class="cmd-list" role="list">
+              <li><a href="assets/files/john-vincent-pangilinan-cv.pdf" download="John-Vincent-Pangilinan-CV.pdf">Download résumé <small>PDF, 48&nbsp;KB</small>
+                <svg class="icon icon--down" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.5v8M4.5 7.5L8 11l3.5-3.5M3 13.5h10"/></svg></a></li>
+              <li><a href="https://github.com/Vincentius8" target="_blank" rel="noopener">Code on GitHub<span class="visually-hidden"> (opens in a new tab)</span>
+                <svg class="icon icon--out" viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11l6-6M6 5h5v5"/></svg></a></li>
+              <li><a href="https://www.linkedin.com/in/johnvincentpangilinan/" target="_blank" rel="noopener">LinkedIn profile<span class="visually-hidden"> (opens in a new tab)</span>
+                <svg class="icon icon--out" viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11l6-6M6 5h5v5"/></svg></a></li>
+              <li><a href="mailto:johnvincentppangilinan@gmail.com?subject=Role%20opportunity">Email about a role
+                <svg class="icon icon--right" viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 8h11M9 3.5L13.5 8 9 12.5"/></svg></a></li>
+            </ul>
+          </div>
+
+          <div class="path panel" data-reveal style="--delay: 80ms">
+            <p class="path__label"># for clients</p>
+            <h3 class="path__title">Need a system built?</h3>
+            <p>Tell me what it needs to do, who will use it and when you need it. I’ll reply within a day with a few questions and a suggested next step.</p>
+            <div class="email">
+              <a class="email__link" href="mailto:johnvincentppangilinan@gmail.com?subject=Project%20inquiry">johnvincentppangilinan<wbr>@gmail.com</a>
+              <button class="copy-btn" type="button" data-copy="johnvincentppangilinan@gmail.com">copy</button>
+              <span class="visually-hidden" aria-live="polite" data-copy-status></span>
+            </div>
+            <ul class="cmd-list" role="list">
+              <li><a href="https://t.me/Vincenzouu" target="_blank" rel="noopener">Message me on Telegram <small>@Vincenzouu</small><span class="visually-hidden"> (opens in a new tab)</span>
+                <svg class="icon icon--out" viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11l6-6M6 5h5v5"/></svg></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="contact__foot" data-reveal>
+          <p class="inline-links"><span class="muted">elsewhere:</span>
+            <a class="link" href="https://github.com/Vincentius8" target="_blank" rel="noopener">github<span class="visually-hidden"> (opens in a new tab)</span></a>
+            <a class="link" href="https://www.linkedin.com/in/johnvincentpangilinan/" target="_blank" rel="noopener">linkedin<span class="visually-hidden"> (opens in a new tab)</span></a>
+            <a class="link" href="https://t.me/Vincenzouu" target="_blank" rel="noopener">telegram<span class="visually-hidden"> (opens in a new tab)</span></a>
+          </p>
+          <p>local time in Biñan — <span data-clock data-tz="Asia/Manila" data-suffix="GMT+8">GMT+8</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer statusbar">
+    <div class="wrap statusbar__inner">
+      <div class="statusbar__group">
+        <span class="sb-item"><svg class="icon" viewBox="0 0 16 16" aria-hidden="true"><circle cx="5" cy="3.5" r="1.5"/><circle cx="5" cy="12.5" r="1.5"/><circle cx="11" cy="5" r="1.5"/><path d="M5 5v6M11 6.5c0 2.5-6 2-6 4.5"/></svg>main</span>
+        <span class="sb-item"><span class="pulse" aria-hidden="true"></span>available</span>
+        <span class="sb-item">© <span data-year>2026</span> John Vincent Pangilinan</span>
+      </div>
+      <div class="statusbar__group">
+        <span class="sb-item">Biñan <span data-clock data-tz="Asia/Manila" data-suffix="GMT+8">GMT+8</span></span>
+        <span class="sb-item">UTF-8</span>
+        <button class="sb-item grid-toggle" type="button" aria-pressed="false" data-grid-toggle>grid</button>
+        <a class="sb-item" href="#top">top
+          <svg class="icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 13.5v-11M3.5 7L8 2.5 12.5 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

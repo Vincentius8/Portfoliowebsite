@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CodeLearn — Case study · John Vincent Pangilinan</title>
+  <meta name="description" content="Case study: a PHP MVC learning platform for Java and C++, with 76 lessons, timed quizzes graded on the server, an in-browser code runner and progress tracking.">
+  <link rel="canonical" href="https://portfolio-five-plum-34.vercel.app/work/codelearn.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="CodeLearn — Case study">
+  <meta property="og:description" content="A PHP MVC learning platform for Java and C++.">
+  <meta property="og:url" content="https://portfolio-five-plum-34.vercel.app/work/codelearn.html">
+  <meta property="og:image" content="https://portfolio-five-plum-34.vercel.app/assets/img/work/codelearn/cover-1200.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#fbfbfc" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b0d11" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+  <script>
+    try {
+      var t = localStorage.getItem('jvp-theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <script src="../assets/js/main.js" defer></script>
+</head>
+
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="wrap site-header__inner">
+      <a class="brand" href="../index.html"><span class="brand__prompt" aria-hidden="true">~/</span>john-vincent<span class="visually-hidden"> Pangilinan — home</span><span class="brand__cursor" aria-hidden="true"></span></a>
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="site-nav__list" role="list">
+          <li><a class="is-current" href="../index.html#work"><span aria-hidden="true">./</span>work</a></li>
+          <li><a href="../index.html#about"><span aria-hidden="true">./</span>about</a></li>
+          <li><a href="../index.html#stack"><span aria-hidden="true">./</span>stack</a></li>
+          <li><a href="../index.html#experience"><span aria-hidden="true">./</span>experience</a></li>
+          <li><a href="../index.html#contact"><span aria-hidden="true">./</span>contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-tools">
+        <div class="theme-switch" role="group" aria-label="Colour theme">
+          <button type="button" data-theme-set="light" aria-pressed="false">light</button>
+          <span aria-hidden="true">/</span>
+          <button type="button" data-theme-set="dark" aria-pressed="false">dark</button>
+        </div>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle>
+          <span class="menu-toggle__open">menu</span><span class="menu-toggle__close">close</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <nav aria-label="Primary">
+      <ol class="mobile-menu__list" role="list">
+        <li style="--i: 0"><a href="../index.html#work"><span>01</span><span class="dot-slash" aria-hidden="true">./</span>work</a></li>
+        <li style="--i: 1"><a href="../index.html#about"><span>02</span><span class="dot-slash" aria-hidden="true">./</span>about</a></li>
+        <li style="--i: 2"><a href="../index.html#stack"><span>03</span><span class="dot-slash" aria-hidden="true">./</span>stack</a></li>
+        <li style="--i: 3"><a href="../index.html#experience"><span>04</span><span class="dot-slash" aria-hidden="true">./</span>experience</a></li>
+        <li style="--i: 4"><a href="../index.html#contact"><span>05</span><span class="dot-slash" aria-hidden="true">./</span>contact</a></li>
+      </ol>
+    </nav>
+    <div class="mobile-menu__foot">
+      <div class="theme-switch" role="group" aria-label="Colour theme">
+        <button type="button" data-theme-set="light" aria-pressed="false">light</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" data-theme-set="dark" aria-pressed="false">dark</button>
+      </div>
+      <div class="mobile-menu__links">
+        <a href="mailto:johnvincentppangilinan@gmail.com">email</a>
+        <a href="../assets/files/john-vincent-pangilinan-cv.pdf" download="John-Vincent-Pangilinan-CV.pdf">résumé.pdf</a>
+        <a href="https://github.com/Vincentius8" target="_blank" rel="noopener">github<span class="visually-hidden"> (opens in a new tab)</span></a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+    <article aria-labelledby="case-title">
+
+      <header class="wrap">
+        <div class="case-hero grid">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <ol role="list">
+              <li><a href="../index.html"><span aria-hidden="true">~</span><span class="visually-hidden">Home</span></a></li>
+              <li><a href="../index.html#work">work</a></li>
+              <li><span aria-current="page">codelearn</span></li>
+            </ol>
+          </nav>
+          <p class="case-hero__label label" data-intro style="--i: 0">Case study 02 / 03 — Capstone</p>
+          <h1 class="case-hero__title" id="case-title" data-intro style="--i: 1">CodeLearn</h1>
+          <p class="case-hero__deck lead" data-intro style="--i: 2">A learning platform for Java and C++ — lessons, exercises, timed quizzes, an in-browser code runner and progress tracking.</p>
+          <dl class="frontmatter" data-intro style="--i: 3">
+            <div><dt class="label">Role</dt><dd>System developer (capstone)</dd></div>
+            <div><dt class="label">Timeline</dt><dd>Sep 2024 – Apr 2025</dd></div>
+            <div><dt class="label">Team</dt><dd>Capstone team, Trimex Colleges</dd></div>
+            <div><dt class="label">Platform</dt><dd>Responsive web app</dd></div>
+            <div><dt class="label">Stack</dt><dd>PHP (MVC), MySQL, JavaScript, JDoodle API</dd></div>
+            <div><dt class="label">Scope</dt><dd>76 lessons in 2 languages</dd></div>
+          </dl>
+        </div>
+      </header>
+
+      <figure class="case-cover wrap" data-intro style="--i: 4">
+        <div class="window">
+          <div class="window__bar" aria-hidden="true"><span class="window__dots"><i></i><i></i><i></i></span><span class="window__title">codelearn — landing page</span></div>
+          <div class="case-cover__frame">
+          <img src="../assets/img/work/codelearn/cover-1600.webp"
+               srcset="../assets/img/work/codelearn/cover-800.webp 800w, ../assets/img/work/codelearn/cover-1200.webp 1200w, ../assets/img/work/codelearn/cover-1600.webp 1600w, ../assets/img/work/codelearn/cover-2400.webp 2400w"
+               sizes="(min-width: 105em) 1570px, 94vw"
+               width="1600" height="1000" fetchpriority="high" decoding="async"
+               alt="CodeLearn landing page: the headline “Coding is the future. Start your journey now.” with Get started and Learn more buttons beside an illustration of two people at a large screen.">
+        </div>
+        </div>
+      </figure>
+
+      <div class="wrap">
+        <section class="glance grid" aria-labelledby="glance-title" data-reveal>
+          <h2 class="rail label" id="glance-title">At a glance</h2>
+          <dl class="glance__items content">
+            <div>
+              <dt class="label">Problem</dt>
+              <dd>First-time programmers get lost when a lesson leans on something they haven’t learned yet.</dd>
+            </div>
+            <div>
+              <dt class="label">Solution</dt>
+              <dd>A PHP MVC platform with 38 topics per language in strict reading order, exercises, timed quizzes and an in-browser code runner.</dd>
+            </div>
+            <div>
+              <dt class="label">Outcome</dt>
+              <dd>76 lessons across Java and C++, quiz scores graded on the server, and progress students can see.</dd>
+            </div>
+          </dl>
+        </section>
+
+        <nav class="toc grid" aria-label="Contents" data-reveal>
+          <p class="rail label">Contents</p>
+          <ol class="content" role="list">
+            <li><a href="#context"><span class="label">01</span>Context</a></li>
+            <li><a href="#requirements"><span class="label">02</span>Requirements</a></li>
+            <li><a href="#system-design"><span class="label">03</span>System design</a></li>
+            <li><a href="#features"><span class="label">04</span>Features</a></li>
+            <li><a href="#build"><span class="label">05</span>Build</a></li>
+            <li><a href="#results"><span class="label">06</span>Results</a></li>
+            <li><a href="#reflection"><span class="label">07</span>Reflection</a></li>
+          </ol>
+        </nav>
+      </div>
+
+      <section class="case-section" id="context" aria-labelledby="context-title">
+        <div class="wrap case-section__grid grid">
+          <p class="case-section__rail rail label">01 — Context</p>
+          <div class="case-body content content--narrow" data-reveal>
+            <h2 id="context-title">Learning to code shouldn’t start with feeling lost</h2>
+            <p>CodeLearn was our capstone project at Trimex Colleges: a web platform for learning Java and C++ from zero. It was built for students writing their first programs — people for whom one unexplained keyword can be the moment they give up.</p>
+            <p>My part covered system design, coding, testing and the technical presentation.</p>
+            <p class="todo"><span class="todo__tag">TODO(john):</span>Add your team size and your own responsibilities — which modules you built.</p>
+            <h3>Constraints</h3>
+            <ul>
+              <li>Two languages, one experience — Java and C++ had to feel like the same course.</li>
+              <li>Practice without setup: beginners can’t be asked to install a compiler first.</li>
+              <li>Scores that can be trusted, because quizzes feed a student’s progress record.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section" id="requirements" aria-labelledby="requirements-title">
+        <div class="wrap case-section__grid grid">
+          <p class="case-section__rail rail label">02 — Requirements</p>
+          <div class="case-body content content--narrow" data-reveal>
+            <h2 id="requirements-title">Where beginners get stuck</h2>
+            <p>Three problems shaped what the system had to do.</p>
+            <ol class="insights" role="list">
+              <li><p><strong>Order matters more than content.</strong><span>A lesson that uses something not yet taught loses people, however well it’s written. So the curriculum follows one rule: each topic may only use what came before it.</span></p></li>
+              <li><p><strong>Practice has to be close.</strong><span>Switching to an IDE to try one line breaks momentum. Topics come with exercises, and code runs right in the browser.</span></p></li>
+              <li><p><strong>Confidence comes from quick feedback.</strong><span>Short, timed quizzes and a visible progress record show learners how far they’ve come, not just what’s left.</span></p></li>
+            </ol>
+            <figure class="case-quote">
+              <blockquote><p>“Input arrives before conditionals because a program that cannot read anything has nothing interesting to branch on; functions arrive before objects because a method is a function with a receiver.”</p></blockquote>
+              <figcaption class="label">From the curriculum notes in CodeLearn’s source</figcaption>
+            </figure>
+          </div>
+          <div class="case-diagram content content--narrow" data-reveal>
+            <p class="flow__actor label">The curriculum, in reading order</p>
+            <ol class="stack" role="list">
+              <li><strong>01 Basics</strong><span>Introduction, syntax &amp; comments, input &amp; output, data types &amp; variables, type casting, constants</span></li>
+              <li><strong>02 Operators</strong><span>Arithmetic, assignment, relational, logical, ternary, precedence</span></li>
+              <li><strong>03 Conditionals</strong><span>if, else, else-if, switch</span></li>
+              <li><strong>04 Loops</strong><span>for, while, do-while, for-each, break &amp; continue, nested loops</span></li>
+              <li><strong>05 Data structures</strong><span>Strings, arrays, multidimensional arrays, lists &amp; vectors</span></li>
+              <li><strong>06 Functions</strong><span>Methods &amp; functions, scope &amp; lifetime, overloading, recursion</span></li>
+              <li><strong>07 Memory</strong><span>Pointers &amp; references, memory management — C++ only</span></li>
+              <li><strong>08 Objects</strong><span>Classes, constructors, encapsulation, inheritance, polymorphism; interfaces and packages in Java</span></li>
+              <li><strong>09 Errors</strong><span>Exception handling</span></li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section" id="system-design" aria-labelledby="system-design-title">
+        <div class="wrap case-section__grid grid">
+          <p class="case-section__rail rail label">03 — System design</p>
+          <div class="case-body content content--narrow" data-reveal>
+            <h2 id="system-design-title">One request path, every failure in one place</h2>
+            <p>CodeLearn follows a strict MVC flow. Every request takes the same path through the layers below, then comes back as a rendered view or a JSON response. Any failure along the way is thrown as one exception type and turned into the right response by a single handler — an error page for a browser, a JSON error for the API.</p>
+          </div>
+          <div class="case-diagram content" data-reveal>
+            <div class="flow-group">
+              <p class="flow__actor label">Request path</p>
+              <ol class="flow" role="list" style="--steps: 7">
+                <li><span class="label">01</span>Front controller</li>
+                <li><span class="label">02</span>Router</li>
+                <li><span class="label">03</span>Middleware</li>
+                <li><span class="label">04</span>Controller</li>
+                <li><span class="label">05</span>Service</li>
+                <li><span class="label">06</span>Repository</li>
+                <li><span class="label">07</span>MySQL</li>
+              </ol>
+            </div>
+          </div>
+          <div class="case-body content content--narrow" data-reveal>
+            <p>All SQL lives in repositories, and the curriculum lives in one catalogue — so the sidebar, contents page, previous/next links and routes can never drift out of sync.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section" id="features" aria-labelledby="features-title">
+        <div class="wrap case-section__grid grid">
+          <p class="case-section__rail rail label">04 — Features</p>
+          <div class="case-body content content--narrow" data-reveal>
+            <h2 id="features-title">What students get</h2>
+            <p>Every screen works on a laptop or a phone, and practice never leaves the lesson.</p>
+          </div>
+          <div class="decisions content" data-reveal>
+            <div class="decision">
+              <p class="label">Feature 01</p>
+              <h3>Sign-up in one card</h3>
+              <p>Sign in and create account share one card with a tab switch, so new students aren’t sent hunting for a separate page.</p>
+            </div>
+            <div class="decision">
+              <p class="label">Feature 02</p>
+              <h3>Fifteen seconds a question</h3>
+              <p>Quizzes are brisk on purpose. Answers stay on the server — the browser never sees them — so a score means what it says.</p>
+            </div>
+            <div class="decision">
+              <p class="label">Feature 03</p>
+              <h3>Run it where you read it</h3>
+              <p>An in-browser code runner means trying an idea takes seconds, not a setup guide.</p>
+            </div>
+          </div>
+          <figure class="figure content" data-reveal>
+            <div class="figure__frame">
+              <img src="../assets/img/work/codelearn/signin-1600.webp"
+                   srcset="../assets/img/work/codelearn/signin-800.webp 800w, ../assets/img/work/codelearn/signin-1200.webp 1200w, ../assets/img/work/codelearn/signin-1600.webp 1600w, ../assets/img/work/codelearn/signin-2400.webp 2400w"
+                   sizes="(min-width: 105em) 1180px, (min-width: 48em) 72vw, 92vw"
+                   width="1600" height="1000" loading="lazy" decoding="async"
+                   alt="CodeLearn sign-in screen: a white card on a deep red background with the college seal, the line “Learn Java and C++, one lesson at a time.”, Sign in and Create account tabs, and email and password fields.">
+            </div>
+            <figcaption><span class="label">Fig. 01</span>Sign in and create account share one card.</figcaption>
+          </figure>
+          <figure class="figure content" data-reveal>
+            <div class="figure__frame">
+              <img src="../assets/img/work/codelearn/mobile-1600.webp"
+                   srcset="../assets/img/work/codelearn/mobile-800.webp 800w, ../assets/img/work/codelearn/mobile-1200.webp 1200w, ../assets/img/work/codelearn/mobile-1600.webp 1600w, ../assets/img/work/codelearn/mobile-2400.webp 2400w"
+                   sizes="(min-width: 105em) 1180px, (min-width: 48em) 72vw, 92vw"
+                   width="1600" height="1000" loading="lazy" decoding="async"
+                   alt="CodeLearn on a phone: the landing page and the sign-in screen side by side, each reflowed into a single column.">
+            </div>
+            <figcaption><span class="label">Fig. 02</span>The same screens at phone width — a test fails the build if any page scrolls sideways.</figcaption>
+          </figure>
+          <figure class="figure content" data-reveal>
+            <div class="figure__frame">
+              <img src="../assets/img/work/codelearn/lesson-1200.webp"
+                   srcset="../assets/img/work/codelearn/lesson-800.webp 800w, ../assets/img/work/codelearn/lesson-1200.webp 1200w, ../assets/img/work/codelearn/lesson-1600.webp 1600w"
+                   sizes="(min-width: 105em) 1180px, (min-width: 48em) 72vw, 92vw"
+                   width="1600" height="1000" loading="lazy" decoding="async"
+                   alt="A lesson page with its exercise and the course sidebar (placeholder).">
+            </div>
+            <figcaption><span class="label">Fig. 03</span>A lesson with its exercise and the course sidebar.</figcaption>
+          </figure>
+          <div class="figure-pair figures content" data-reveal>
+            <figure class="figure">
+              <div class="figure__frame">
+                <img src="../assets/img/work/codelearn/quiz-1200.webp"
+                     srcset="../assets/img/work/codelearn/quiz-800.webp 800w, ../assets/img/work/codelearn/quiz-1200.webp 1200w, ../assets/img/work/codelearn/quiz-1600.webp 1600w"
+                     sizes="(min-width: 105em) 580px, (min-width: 48em) 36vw, 92vw"
+                     width="1600" height="1000" loading="lazy" decoding="async"
+                     alt="A timed quiz question with its countdown (placeholder).">
+              </div>
+              <figcaption><span class="label">Fig. 04</span>A timed quiz question.</figcaption>
+            </figure>
+            <figure class="figure">
+              <div class="figure__frame">
+                <img src="../assets/img/work/codelearn/runner-1200.webp"
+                     srcset="../assets/img/work/codelearn/runner-800.webp 800w, ../assets/img/work/codelearn/runner-1200.webp 1200w, ../assets/img/work/codelearn/runner-1600.webp 1600w"
+                     sizes="(min-width: 105em) 580px, (min-width: 48em) 36vw, 92vw"
+                     width="1600" height="1000" loading="lazy" decoding="async"
+                     alt="The in-browser code runner with code and its output (placeholder).">
+              </div>
+              <figcaption><span class="label">Fig. 05</span>The in-browser code runner.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section" id="build" aria-labelledby="build-title">
+        <div class="wrap case-section__grid grid">
+          <p class="case-section__rail rail label">05 — Build</p>
+          <div class="case-body content content--narrow" data-reveal>
+            <h2 id="build-title">Engineering that protects the learning</h2>
+            <p>Most of the features above only hold if the code enforces them. These are the parts that do.</p>
+            <ul class="stack" role="list">
+              <li><strong>Architecture</strong><span>PHP MVC: router, middleware, controllers, services and repositories, with every failure handled in one place.</span></li>
+              <li><strong>Curriculum</strong><span>One catalogue drives the sidebar, the contents page, previous/next links and routes. Adding a topic is one row and one file.</span></li>
+              <li><strong>Quizzes</strong><span>Answers live on the server. The browser gets prompts and options only, and the server scores the attempt.</span></li>
+              <li><strong>Code runner</strong><span>Code runs through the JDoodle API, with a size cap and a timeout.</span></li>
+              <li><strong>Security</strong><span>CSRF tokens on every form and API call, checked by a test that fails if a new route is left unguarded.</span></li>
+              <li><strong>Testing</strong><span>Five suites cover routing, grading, every lesson and answer key, page rendering, and responsive layout.</span></li>
+              <li><strong>Accessibility</strong><span>Read-aloud (text-to-speech) for lesson content.</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section" id="results" aria-labelledby="results-title">
+        <div class="wrap case-section__grid grid">
+          <p class="case-section__rail rail label">06 — Results</p>
+          <div class="case-body content content--narrow" data-reveal>
+            <h2 id="results-title">What we shipped</h2>
+            <p>A complete course in two languages, with practice and assessment built into the path rather than bolted on at the end.</p>
+          </div>
+          <dl class="metrics content" data-reveal>
+            <div class="metric"><dt>Lessons across Java and C++, in beginner reading order</dt><dd>76</dd></div>
+            <div class="metric"><dt>Per quiz question, graded on the server</dt><dd>15 s</dd></div>
+            <div class="metric"><dt>Automated test suites, including a responsive-layout guard</dt><dd>5</dd></div>
+          </dl>
+          <div class="case-body content content--narrow" data-reveal>
+            <p class="todo"><span class="todo__tag">TODO(john):</span>Add your evaluation results — how many students tested CodeLearn, your ISO 25010 or survey scores — and when you presented the thesis.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section" id="reflection" aria-labelledby="reflection-title">
+        <div class="wrap case-section__grid grid">
+          <p class="case-section__rail rail label">07 — Reflection</p>
+          <div class="case-body content content--narrow" data-reveal>
+            <h2 id="reflection-title">What I’d do next</h2>
+            <ol class="insights" role="list">
+              <li><p><strong>Test with complete beginners earlier.</strong><span>Before the curriculum order was fixed, not after.</span></p></li>
+              <li><p><strong>Give exercises hints.</strong><span>So a wrong answer teaches something instead of just stopping you.</span></p></li>
+              <li><p><strong>Find where students stop.</strong><span>Measure the lessons people abandon, and rewrite those first.</span></p></li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <nav class="case-next wrap" aria-label="Next case study">
+        <a class="case-next__link" href="trimex-library.html">
+          <span class="label">Next case study — 03 / 03</span>
+          <span class="case-next__title">Trimex Library System
+            <svg class="icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg>
+          </span>
+        </a>
+      </nav>
+    </article>
+
+    <section class="wrap" aria-label="Contact">
+      <div class="cta-band grid">
+        <p class="cta-band__text">Need a system like this one?</p>
+        <div class="cta-band__actions">
+          <a class="btn btn--solid" href="mailto:johnvincentppangilinan@gmail.com?subject=Project%20inquiry">Start a conversation
+            <svg class="icon icon--right" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg>
+          </a>
+          <a class="btn btn--line" href="../assets/files/john-vincent-pangilinan-cv.pdf" download="John-Vincent-Pangilinan-CV.pdf">Résumé (PDF)
+            <svg class="icon icon--down" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2v9M4 7l4 4 4-4M3 14h10"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer statusbar">
+    <div class="wrap statusbar__inner">
+      <div class="statusbar__group">
+        <span class="sb-item"><svg class="icon" viewBox="0 0 16 16" aria-hidden="true"><circle cx="5" cy="3.5" r="1.5"/><circle cx="5" cy="12.5" r="1.5"/><circle cx="11" cy="5" r="1.5"/><path d="M5 5v6M11 6.5c0 2.5-6 2-6 4.5"/></svg>main</span>
+        <span class="sb-item"><span class="pulse" aria-hidden="true"></span>available</span>
+        <span class="sb-item">© <span data-year>2026</span> John Vincent Pangilinan</span>
+      </div>
+      <div class="statusbar__group">
+        <span class="sb-item">Biñan <span data-clock data-tz="Asia/Manila" data-suffix="GMT+8">GMT+8</span></span>
+        <span class="sb-item">UTF-8</span>
+        <button class="sb-item grid-toggle" type="button" aria-pressed="false" data-grid-toggle>grid</button>
+        <a class="sb-item" href="#top">top
+          <svg class="icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 13.5v-11M3.5 7L8 2.5 12.5 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
