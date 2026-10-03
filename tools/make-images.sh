@@ -21,7 +21,7 @@ trap 'rm -rf "$tmp"' EXIT
 mkdir -p "$(dirname "$out")"
 
 for width in $sizes; do
-  sips --resampleWidth "$width" "$src" --out "$tmp/$width.png" >/dev/null
+  sips -s format png --resampleWidth "$width" "$src" --out "$tmp/$width.png" >/dev/null
   cwebp -quiet -q 80 -m 6 -sharp_yuv "$tmp/$width.png" -o "$out-$width.webp"
   echo "$out-$width.webp"
 done
