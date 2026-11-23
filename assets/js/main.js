@@ -2,6 +2,15 @@
 
 (() => {
   const root = document.documentElement;
+  // Paste the public HRPMS website URL between the quotes when it is ready.
+  const hrpmsDemoUrl = '';
+  if (hrpmsDemoUrl) {
+    document.querySelectorAll('[data-hrpms-demo]').forEach(link => {
+      link.href = hrpmsDemoUrl;
+      link.closest('[hidden]').hidden = false;
+    });
+  }
+
   const THEME_KEY = 'jvp-theme';
   const PAPER = { light: '#fbfbfc', dark: '#0b0d11' };
   const systemDark = window.matchMedia('(prefers-color-scheme: dark)');
@@ -167,6 +176,122 @@
   
   
   
+
+  const track = document.querySelector('#work-track');
+  if (track) {
+    const controls = document.querySelector('.work-controls');
+    const position = controls.querySelector('[data-work-position]');
+    const cards = [...track.children];
+
+    const meter = controls.querySelector('.work-meter');
+    let inView = false;
+    let active = 0;
+    let timer;
+
+    function scheduleSlide() {
+      clearTimeout(timer);
+      if (!inView || reducedMotion.matches || document.hidden || controls.hidden ||
+          track.querySelector(':focus-visible') || track.matches(':focus-visible')) return;
+      timer = setTimeout(() => move(1), 4500);
+    }
+
+    track.classList.add('work-deck');
+    controls.hidden = cards.length < 2;
+    cards.forEach((card, index) => {
+      const image = card.querySelector('img');
+      card.style.setProperty('--scene-image', 'url("' + image.src + '")');
+      const titleLink = card.querySelector('.repo__link');
+      const caption = card.querySelector('.repo__cta');
+      const caseLink = document.createElement('a');
+      caseLink.className = caption.className;
+      caseLink.href = titleLink.href;
+      caseLink.setAttribute('aria-label', 'Read ' + titleLink.textContent + ' case study');
+      caseLink.append(...caption.childNodes);
+      caption.replaceWith(caseLink);
+      const panel = document.createElement('a');
+      panel.className = 'project-panel';
+      panel.href = titleLink.href;
+      card.querySelector('figure').append(panel);
+      panel.addEventListener('click', event => {
+        if (index === active) return;
+        event.preventDefault();
+        move(index - active);
+      });
+    });
+
+    function updateCarousel() {
+      cards.forEach((card, index) => {
+        const count = cards.length;
+        let slot = (index - active + count) % count;
+        if (slot > count / 2) slot -= count;
+        const selected = index === active;
+        const depth = Math.abs(slot);
+        card.style.setProperty('--slot', slot);
+        card.style.setProperty('--depth', depth);
+        card.classList.toggle('is-active', selected);
+        card.querySelector('.repo__body').inert = !selected;
+        const panel = card.querySelector('.project-panel');
+        panel.setAttribute('aria-label', (selected ? 'Read case study: ' : 'Select project: ') +
+          card.querySelector('h3').textContent);
+        panel.tabIndex = selected ? 0 : -1;
+      });
+      position.textContent = (active + 1) + ' / ' + cards.length;
+      meter.style.setProperty('--work-window', (100 / cards.length) + '%');
+      meter.style.setProperty('--work-offset', (100 * active) + '%');
+    }
+
+    function move(distance) {
+      active = (active + distance + cards.length) % cards.length;
+      updateCarousel();
+      scheduleSlide();
+    }
+
+    track.addEventListener('keydown', event => {
+      if (!['ArrowLeft', 'ArrowRight'].includes(event.key)) return;
+      event.preventDefault();
+      track.focus({ preventScroll: true });
+      move(event.key === 'ArrowRight' ? 1 : -1);
+    });
+    let touchStart;
+    let suppressClickUntil = 0;
+    track.addEventListener('touchstart', event => {
+      touchStart = event.touches.length === 1 ? event.touches[0] : null;
+    }, { passive: true });
+    track.addEventListener('touchend', event => {
+      if (!touchStart) return;
+      const dx = event.changedTouches[0].clientX - touchStart.clientX;
+      const dy = event.changedTouches[0].clientY - touchStart.clientY;
+      touchStart = null;
+      if (Math.abs(dx) > 36 && Math.abs(dx) > Math.abs(dy)) {
+        suppressClickUntil = performance.now() + 450;
+        move(dx < 0 ? 1 : -1);
+      }
+    }, { passive: true });
+    track.addEventListener('touchcancel', () => { touchStart = null; });
+    track.addEventListener('click', event => {
+      if (performance.now() < suppressClickUntil) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+    }, true);
+    track.addEventListener('focusin', scheduleSlide);
+    track.addEventListener('focusout', () => requestAnimationFrame(scheduleSlide));
+    track.addEventListener('pointerdown', () => clearTimeout(timer));
+    window.addEventListener('pointerup', scheduleSlide);
+    track.addEventListener('pointercancel', scheduleSlide);
+    document.addEventListener('visibilitychange', scheduleSlide);
+    reducedMotion.addEventListener('change', scheduleSlide);
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(([entry]) => {
+        inView = entry.isIntersecting;
+        scheduleSlide();
+      }, { threshold: 0.1 }).observe(track);
+    } else {
+      inView = true;
+      scheduleSlide();
+    }
+    updateCarousel();
+  }
 
   const revealables = document.querySelectorAll('[data-reveal]');
   if (revealables.length && 'IntersectionObserver' in window && !reducedMotion.matches) {

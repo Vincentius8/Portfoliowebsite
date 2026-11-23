@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>John Vincent Pangilinan — Junior Software Engineer &amp; Web Developer</title>
-  <meta name="description" content="Junior software engineer and web developer in Biñan, Laguna. I build full-stack web systems in PHP, Laravel, MySQL and JavaScript, from database to deployment. Available for full-time roles and freelance projects.">
+  <meta name="description" content="Junior software engineer and web developer in Biñan, Laguna. I build full-stack web systems in TypeScript, React, Laravel and MySQL, from database to deployment. Available for full-time roles and freelance projects.">
 
   
   <link rel="canonical" href="https://portfolio-five-plum-34.vercel.app/">
@@ -48,7 +48,7 @@
     "url": "https://portfolio-five-plum-34.vercel.app/",
     "address": { "@type": "PostalAddress", "addressLocality": "Biñan", "addressRegion": "Laguna", "addressCountry": "PH" },
     "alumniOf": { "@type": "CollegeOrUniversity", "name": "Trimex Colleges" },
-    "knowsAbout": ["PHP", "Laravel", "JavaScript", "React", "MySQL", "HTML5", "CSS3", "Tailwind CSS", "Bootstrap", "Git"],
+    "knowsAbout": ["TypeScript", "Laravel", "React", "MySQL", "Tailwind CSS", "Bootstrap", "Git"],
     "sameAs": [
       "https://www.linkedin.com/in/johnvincentpangilinan/",
       "https://github.com/Vincentius8",
@@ -132,7 +132,7 @@
           </div>
           <dl class="hero__meta kv" data-intro style="--i: 5">
             <div><dt>location</dt><dd>Biñan, Laguna, PH · <span data-clock data-tz="Asia/Manila" data-suffix="GMT+8">GMT+8</span></dd></div>
-            <div><dt>focus</dt><dd>PHP · Laravel · MySQL · JavaScript</dd></div>
+            <div><dt>focus</dt><dd>TypeScript · React · Laravel · MySQL</dd></div>
             <div><dt>education</dt><dd>BSIT, Trimex Colleges · Dean’s Lister 2024</dd></div>
           </dl>
         </div>
@@ -145,9 +145,9 @@
             <p style="--n: 2"><span class="term__ps" aria-hidden="true">$ </span>cat role.txt</p>
             <p style="--n: 3" class="term__out">Junior Software Engineer · Web Developer</p>
             <p style="--n: 4"><span class="term__ps" aria-hidden="true">$ </span>ls projects/</p>
-            <p style="--n: 5" class="term__out"><span class="term__dir">jar-garments/</span>  <span class="term__dir">codelearn/</span>  <span class="term__dir">trimex-library/</span></p>
+            <p style="--n: 5" class="term__out"><span class="term__dir">jar-garments/</span>  <span class="term__dir">codelearn/</span>  <span class="term__dir">trimex-library/</span>  <span class="term__dir">pos-for-caffe/</span>  <span class="term__dir">hrpms/</span></p>
             <p style="--n: 6"><span class="term__ps" aria-hidden="true">$ </span>cat stack.txt</p>
-            <p style="--n: 7" class="term__out">PHP · Laravel · JavaScript · React · MySQL · Tailwind</p>
+            <p style="--n: 7" class="term__out">TypeScript · Laravel · React · MySQL · Tailwind</p>
             <p style="--n: 8"><span class="term__ps" aria-hidden="true">$ </span>echo $STATUS</p>
             <p style="--n: 9" class="term__ok">available — full-time &amp; freelance</p>
             <p style="--n: 10"><span class="term__ps" aria-hidden="true">$ </span><span class="cursor" aria-hidden="true"></span></p>
@@ -160,18 +160,41 @@
     <section class="section" id="work" aria-labelledby="work-title">
       <div class="wrap">
         <header class="section-head" data-reveal>
-          <p class="section-head__bar"><span class="section-head__index">01</span><span>~/work</span><span class="section-head__rule" aria-hidden="true"></span><span class="section-head__meta">3 systems · 2024–2025</span></p>
+          <p class="section-head__bar"><span class="section-head__index">01</span><span>~/work</span><span class="section-head__rule" aria-hidden="true"></span><span class="section-head__meta">5 systems · 2024–2026</span></p>
           <h2 class="section-head__title" id="work-title">Selected work</h2>
         </header>
 
-        <p class="section-intro lead" data-reveal>Three systems, each written up the way I’d walk your team through it: the problem, how it was built and what changed.</p>
+        <p class="section-intro lead" data-reveal>Explore the projects and the decisions behind each build.</p>
 
-        <ol class="repo-grid" role="list">
-          <li class="repo" data-reveal>
+        <div class="work-controls" hidden>
+          <span class="work-meter" aria-hidden="true"><i></i></span>
+          <span class="label" data-work-position></span>
+        </div>
+        <ol class="repo-grid" id="work-track" role="list" tabindex="0" aria-label="Selected projects">
+          <li class="repo">
+            <figure class="repo__media hrpms-cover">
+              <img src="assets/img/work/hrpms/cover-800.webp"
+                   srcset="assets/img/work/hrpms/cover-800.webp 800w, assets/img/work/hrpms/cover-1200.webp 1200w"
+                   sizes="(min-width: 48em) 45vw, 92vw" width="1600" height="708"
+                   loading="lazy" decoding="async" alt="HRPMS sign-in screen for HR staff and school employees.">
+            </figure>
+            <div class="repo__body">
+              <p class="repo__path">~/work/<span>hrpms</span></p>
+              <h3 class="repo__title"><a class="repo__link" href="work/hrpms.html">HRPMS</a></h3>
+              <p class="repo__desc">An HR and payroll management system for a small Christian school. Staff can review leave, prepare payroll for approval and issue payslips.</p>
+              <ul class="langs" role="list" aria-label="Demo built with">
+                <li><span class="langs__dot" style="--c: #3178c6" aria-hidden="true"></span>TypeScript</li>
+                <li><span class="langs__dot" style="--c: #087ea4" aria-hidden="true"></span>React</li>
+                <li><span class="langs__dot" style="--c: #06b6d4" aria-hidden="true"></span>Tailwind CSS</li>
+              </ul>
+              <p class="repo__foot"><a class="link" data-hrpms-demo hidden target="_blank" rel="noopener">Live demo<span class="visually-hidden"> of HRPMS (opens in a new tab)</span></a><span class="repo__cta" aria-hidden="true">read case study →</span></p>
+            </div>
+          </li>
+          <li class="repo">
             <figure class="repo__media">
               <img src="assets/img/work/jar-garments/cover-800.webp"
                    srcset="assets/img/work/jar-garments/cover-800.webp 800w, assets/img/work/jar-garments/cover-1200.webp 1200w"
-                   sizes="(min-width: 64em) 31vw, (min-width: 48em) 40vw, calc(100vw - 2.5rem)"
+                   sizes="(min-width: 64em) 46vw, (min-width: 48em) 45vw, calc(100vw - 2.5rem)"
                    width="1600" height="1000" loading="lazy" decoding="async"
                    alt="JAR Garments storefront: the JAR wordmark over close-up rolls of fabric, with home, search and account buttons along the bottom.">
             </figure>
@@ -190,11 +213,11 @@
             </div>
           </li>
 
-          <li class="repo" data-reveal style="--delay: 80ms">
+          <li class="repo">
             <figure class="repo__media">
               <img src="assets/img/work/codelearn/cover-800.webp"
                    srcset="assets/img/work/codelearn/cover-800.webp 800w, assets/img/work/codelearn/cover-1200.webp 1200w"
-                   sizes="(min-width: 64em) 31vw, (min-width: 48em) 40vw, calc(100vw - 2.5rem)"
+                   sizes="(min-width: 64em) 46vw, (min-width: 48em) 45vw, calc(100vw - 2.5rem)"
                    width="1600" height="1000" loading="lazy" decoding="async"
                    alt="CodeLearn landing page: the headline “Coding is the future. Start your journey now.” with Get started and Learn more buttons beside an illustration of two people at a large screen.">
             </figure>
@@ -212,11 +235,11 @@
             </div>
           </li>
 
-          <li class="repo" data-reveal style="--delay: 160ms">
+          <li class="repo">
             <figure class="repo__media">
               <img src="assets/img/work/trimex-library/cover-800.webp"
                    srcset="assets/img/work/trimex-library/cover-800.webp 800w, assets/img/work/trimex-library/cover-1200.webp 1200w"
-                   sizes="(min-width: 64em) 31vw, (min-width: 48em) 40vw, calc(100vw - 2.5rem)"
+                   sizes="(min-width: 64em) 46vw, (min-width: 48em) 45vw, calc(100vw - 2.5rem)"
                    width="1600" height="1000" loading="lazy" decoding="async"
                    alt="Trimex Library home page: “Welcome to Trimex Library” over a photo of three students reading together, under the Trimex Colleges navigation bar.">
             </figure>
@@ -231,6 +254,27 @@
                 <li><span class="langs__dot" aria-hidden="true"></span>RFID</li>
               </ul>
               <p class="repo__foot"><span>ojt · 2025</span><span class="repo__cta" aria-hidden="true">read case study <svg class="icon" viewBox="0 0 16 16"><path d="M2.5 8h11M9 3.5L13.5 8 9 12.5"/></svg></span></p>
+            </div>
+          </li>
+
+          <li class="repo">
+            <figure class="repo__media">
+              <img src="assets/img/work/pos-for-caffe/cover-800.webp"
+                   srcset="assets/img/work/pos-for-caffe/cover-800.webp 800w, assets/img/work/pos-for-caffe/cover-1200.webp 1200w"
+                   sizes="(min-width: 64em) 46vw, (min-width: 48em) 45vw, calc(100vw - 2.5rem)"
+                   width="1600" height="1000" loading="lazy" decoding="async"
+                   alt="No Caffe dashboard with daily sales, gross profit, low-stock items and a weekly sales chart.">
+            </figure>
+            <div class="repo__body">
+              <p class="repo__path">~/work/<span>pos-for-caffe</span></p>
+              <h3 class="repo__title"><a class="repo__link" href="work/pos-for-caffe.html">POS for caffe</a></h3>
+              <p class="repo__desc">A café POS that shows how many servings the ingredients on hand can make, what each serving costs and where stock may be going missing.</p>
+              <ul class="langs" role="list" aria-label="Built with">
+                <li><span class="langs__dot" aria-hidden="true"></span>Vue</li>
+                <li><span class="langs__dot" aria-hidden="true"></span>Pinia</li>
+                <li><span class="langs__dot" aria-hidden="true"></span>PrimeVue</li>
+              </ul>
+              <p class="repo__foot"><a class="link" href="https://pos-system-v3.vercel.app/" target="_blank" rel="noopener">Live demo<span class="visually-hidden"> of POS for caffe (opens in a new tab)</span></a><span class="repo__cta" aria-hidden="true">read case study <svg class="icon" viewBox="0 0 16 16"><path d="M2.5 8h11M9 3.5L13.5 8 9 12.5"/></svg></span></p>
             </div>
           </li>
         </ol>
@@ -317,32 +361,17 @@
     <section class="section" id="stack" aria-labelledby="stack-title">
       <div class="wrap">
         <header class="section-head" data-reveal>
-          <p class="section-head__bar"><span class="section-head__index">03</span><span>~/stack</span><span class="section-head__rule" aria-hidden="true"></span><span class="section-head__meta">14 tools</span></p>
+          <p class="section-head__bar"><span class="section-head__index">03</span><span>~/stack</span><span class="section-head__rule" aria-hidden="true"></span><span class="section-head__meta">10 tools</span></p>
           <h2 class="section-head__title" id="stack-title">Tech stack</h2>
         </header>
 
         <p class="section-intro lead" data-reveal>What I build with, day to day.</p>
 
         <ul class="stack-grid" role="list" data-reveal>
-          <li class="tech" style="--logo: url(https://cdn.jsdelivr.net/npm/simple-icons@14/icons/php.svg); --brand: #777bb4">
+          <li class="tech" style="--logo: url(https://cdn.jsdelivr.net/npm/simple-icons@14/icons/typescript.svg); --brand: #3178c6">
             <span class="tech__mark" aria-hidden="true"><span class="tech__logo"></span></span>
-            <span class="tech__name">PHP</span>
+            <span class="tech__name">TypeScript</span>
             <span class="tech__kind label">Language</span>
-          </li>
-          <li class="tech tech--js" style="--logo: url(https://cdn.jsdelivr.net/npm/simple-icons@14/icons/javascript.svg); --brand: #f7df1e">
-            <span class="tech__mark" aria-hidden="true"><span class="tech__logo"></span></span>
-            <span class="tech__name">JavaScript</span>
-            <span class="tech__kind label">Language</span>
-          </li>
-          <li class="tech" style="--logo: url(https://cdn.jsdelivr.net/npm/simple-icons@14/icons/html5.svg); --brand: #e34f26">
-            <span class="tech__mark" aria-hidden="true"><span class="tech__logo"></span></span>
-            <span class="tech__name">HTML5</span>
-            <span class="tech__kind label">Markup</span>
-          </li>
-          <li class="tech" style="--logo: url(https://cdn.jsdelivr.net/npm/simple-icons@14/icons/css3.svg); --brand: #1572b6; --brand-dark: #3d9be9">
-            <span class="tech__mark" aria-hidden="true"><span class="tech__logo"></span></span>
-            <span class="tech__name">CSS3</span>
-            <span class="tech__kind label">Styling</span>
           </li>
           <li class="tech" style="--logo: url(https://cdn.jsdelivr.net/npm/simple-icons@14/icons/laravel.svg); --brand: #ff2d20">
             <span class="tech__mark" aria-hidden="true"><span class="tech__logo"></span></span>
@@ -383,11 +412,6 @@
             <span class="tech__mark" aria-hidden="true"><span class="tech__logo"></span></span>
             <span class="tech__name">VS Code</span>
             <span class="tech__kind label">Editor</span>
-          </li>
-          <li class="tech" style="--logo: url(https://cdn.jsdelivr.net/npm/simple-icons@14/icons/xampp.svg); --brand: #fb7a24">
-            <span class="tech__mark" aria-hidden="true"><span class="tech__logo"></span></span>
-            <span class="tech__name">XAMPP</span>
-            <span class="tech__kind label">Local server</span>
           </li>
           <li class="tech" style="--logo: url(https://cdn.jsdelivr.net/npm/simple-icons@14/icons/linux.svg); --brand: #d9a400; --brand-dark: #fcc624">
             <span class="tech__mark" aria-hidden="true"><span class="tech__logo"></span></span>

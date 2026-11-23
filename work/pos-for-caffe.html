@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>POS for caffe — Case study · John Vincent Pangilinan</title>
+  <meta name="description" content="A point-of-sale system for small café owners who want to see what they can sell from today’s stock, how much each drink costs and where ingredients may be going missing.">
+  <link rel="canonical" href="https://portfolio-five-plum-34.vercel.app/work/pos-for-caffe.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="POS for caffe — Case study">
+  <meta property="og:description" content="A point-of-sale system for small café owners who want to see what they can sell from today’s stock, how much each drink costs and where ingredients may be going missing.">
+  <meta property="og:url" content="https://portfolio-five-plum-34.vercel.app/work/pos-for-caffe.html">
+  <meta property="og:image" content="https://portfolio-five-plum-34.vercel.app/assets/img/work/pos-for-caffe/cover-1200.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#fbfbfc" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b0d11" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+  <script>
+    try {
+      var t = localStorage.getItem('jvp-theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <script src="../assets/js/main.js" defer></script>
+</head>
+
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="wrap site-header__inner">
+      <a class="brand" href="../index.html"><span class="brand__prompt" aria-hidden="true">~/</span>john-vincent<span class="visually-hidden"> Pangilinan — home</span><span class="brand__cursor" aria-hidden="true"></span></a>
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="site-nav__list" role="list">
+          <li><a class="is-current" href="../index.html#work"><span aria-hidden="true">./</span>work</a></li>
+          <li><a href="../index.html#about"><span aria-hidden="true">./</span>about</a></li>
+          <li><a href="../index.html#stack"><span aria-hidden="true">./</span>stack</a></li>
+          <li><a href="../index.html#experience"><span aria-hidden="true">./</span>experience</a></li>
+          <li><a href="../index.html#contact"><span aria-hidden="true">./</span>contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-tools">
+        <div class="theme-switch" role="group" aria-label="Colour theme">
+          <button type="button" data-theme-set="light" aria-pressed="false">light</button>
+          <span aria-hidden="true">/</span>
+          <button type="button" data-theme-set="dark" aria-pressed="false">dark</button>
+        </div>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle>
+          <span class="menu-toggle__open">menu</span><span class="menu-toggle__close">close</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <nav aria-label="Primary">
+      <ol class="mobile-menu__list" role="list">
+        <li style="--i: 0"><a href="../index.html#work"><span>01</span><span class="dot-slash" aria-hidden="true">./</span>work</a></li>
+        <li style="--i: 1"><a href="../index.html#about"><span>02</span><span class="dot-slash" aria-hidden="true">./</span>about</a></li>
+        <li style="--i: 2"><a href="../index.html#stack"><span>03</span><span class="dot-slash" aria-hidden="true">./</span>stack</a></li>
+        <li style="--i: 3"><a href="../index.html#experience"><span>04</span><span class="dot-slash" aria-hidden="true">./</span>experience</a></li>
+        <li style="--i: 4"><a href="../index.html#contact"><span>05</span><span class="dot-slash" aria-hidden="true">./</span>contact</a></li>
+      </ol>
+    </nav>
+    <div class="mobile-menu__foot">
+      <div class="theme-switch" role="group" aria-label="Colour theme">
+        <button type="button" data-theme-set="light" aria-pressed="false">light</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" data-theme-set="dark" aria-pressed="false">dark</button>
+      </div>
+      <div class="mobile-menu__links">
+        <a href="mailto:johnvincentppangilinan@gmail.com">email</a>
+        <a href="../assets/files/john-vincent-pangilinan-cv.pdf" download="John-Vincent-Pangilinan-CV.pdf">résumé.pdf</a>
+        <a href="https://github.com/Vincentius8" target="_blank" rel="noopener">github<span class="visually-hidden"> (opens in a new tab)</span></a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+    <article aria-labelledby="case-title">
+
+      <header class="wrap">
+        <div class="case-hero grid">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <ol role="list">
+              <li><a href="../index.html"><span aria-hidden="true">~</span><span class="visually-hidden">Home</span></a></li>
+              <li><a href="../index.html#work">work</a></li>
+              <li><span aria-current="page">pos-for-caffe</span></li>
+            </ol>
+          </nav>
+          <p class="case-hero__label label" data-intro style="--i: 0">Case study 04 / 05 — Café operations</p>
+          <h1 class="case-hero__title" id="case-title" data-intro style="--i: 1">POS for caffe</h1>
+          <p class="case-hero__deck lead" data-intro style="--i: 2">A point-of-sale system for small café owners who want to see what they can sell from today’s stock, how much each drink costs and where ingredients may be going missing.</p>
+          <dl class="frontmatter" data-intro style="--i: 3">
+            <div><dt class="label">Audience</dt><dd>Small café owners</dd></div>
+            <div><dt class="label">Platform</dt><dd>Web app</dd></div>
+            <div><dt class="label">Stack</dt><dd>Vue, Pinia, PrimeVue</dd></div>
+            <div><dt class="label">Links</dt><dd><a class="link" href="https://pos-system-v3.vercel.app/" target="_blank" rel="noopener">Live demo<span class="visually-hidden"> of POS for caffe (opens in a new tab)</span></a></dd></div>
+          </dl>
+        </div>
+      </header>
+
+      <figure class="case-cover wrap" data-intro style="--i: 4">
+        <div class="window">
+          <div class="window__bar" aria-hidden="true"><span class="window__dots"><i></i><i></i><i></i></span><span class="window__title">pos-system-v3.vercel.app</span></div>
+          <div class="case-cover__frame">
+          <img src="../assets/img/work/pos-for-caffe/cover-1600.webp"
+               srcset="../assets/img/work/pos-for-caffe/cover-800.webp 800w, ../assets/img/work/pos-for-caffe/cover-1200.webp 1200w, ../assets/img/work/pos-for-caffe/cover-1600.webp 1600w"
+               sizes="(min-width: 105em) 1570px, 94vw"
+               width="1600" height="1000" fetchpriority="high" decoding="async"
+               alt="No Caffe dashboard with daily sales, gross profit, low-stock items and a weekly sales chart.">
+        </div>
+        </div>
+      </figure>
+
+      <div class="wrap">
+        <section class="glance grid" aria-labelledby="glance-title" data-reveal>
+          <h2 class="rail label" id="glance-title">At a glance</h2>
+          <dl class="glance__items content">
+            <div>
+              <dt class="label">Problem</dt>
+              <dd>A till shows what customers paid. The owner also needs to know what the remaining ingredients can make and why some ingredients run out early.</dd>
+            </div>
+            <div>
+              <dt class="label">Solution</dt>
+              <dd>Connect each menu item and size to an ingredient recipe. Use the same portions to estimate servings, calculate food cost and record stock used at checkout.</dd>
+            </div>
+            <div>
+              <dt class="label">Outcome</dt>
+              <dd>The owner can check which ingredient limits sales, review the margin on a drink and compare the expected stock balance with a physical count.</dd>
+            </div>
+          </dl>
+        </section>
+
+        <nav class="toc grid" aria-label="Contents" data-reveal>
+          <p class="rail label">Contents</p>
+          <ol class="content" role="list">
+            <li><a href="#context"><span class="label">01</span>Context</a></li>
+            <li><a href="#requirements"><span class="label">02</span>Requirements</a></li>
+            <li><a href="#system-design"><span class="label">03</span>System design</a></li>
+            <li><a href="#features"><span class="label">04</span>Features</a></li>
+            <li><a href="#build"><span class="label">05</span>Build</a></li>
+            <li><a href="#results"><span class="label">06</span>Results</a></li>
+            <li><a href="#reflection"><span class="label">07</span>Reflection</a></li>
+          </ol>
+        </nav>
+      </div>
+
+      <section class="case-section" id="context" aria-labelledby="context-title">
+        <div class="wrap case-section__grid grid">
+          <p class="case-section__rail rail label">01 — Context</p>
+          <div class="case-body content content--narrow" data-reveal>
+            <h2 id="context-title">Why did the milk run out before closing?</h2>
+            <p>A busy shift can end with a full cash drawer and an empty milk fridge. Sales receipts tell the owner how many lattes sold. To work out whether the milk should have lasted longer, the owner also needs the delivery quantity and the milk portion for each cup size.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section" id="requirements" aria-labelledby="requirements-title">
+        <div class="wrap case-section__grid grid">
+          <p class="case-section__rail rail label">02 — Requirements</p>
+          <div class="case-body content content--narrow" data-reveal>
+            <h2 id="requirements-title">Three decisions during a shift</h2>
+            <p>Before opening, the owner needs to know which drinks are available. At the counter, the cashier needs to ring up a size and quantity. At closing, the owner needs a record of the ingredients those orders should have consumed.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section" id="system-design" aria-labelledby="system-design-title">
+        <div class="wrap case-section__grid grid">
+          <p class="case-section__rail rail label">03 — System design</p>
+          <div class="case-body content content--narrow" data-reveal>
+            <h2 id="system-design-title">The ingredient that runs out first sets the limit</h2>
+            <p>Take a latte that uses 18 g of coffee and 200 ml of milk. With 360 g of beans and 3 litres of milk, there is coffee for 20 lattes but milk for only 15. At ₱120 each, that stock could bring in ₱1,800 if all 15 sell as lattes. Other drinks draw from the same milk supply, so their potential sales cannot simply be added on top.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section" id="features" aria-labelledby="features-title">
+        <div class="wrap case-section__grid grid">
+          <p class="case-section__rail rail label">04 — Features</p>
+          <div class="case-body content content--narrow" data-reveal>
+            <h2 id="features-title">From a recipe to a receipt</h2>
+            <p>Recipes specify ingredients by serving size. Cost Computation prices those portions using purchase costs. New Sale checks the ingredients needed across the whole order, and stock movements give the owner a record to review after checkout.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section" id="build" aria-labelledby="build-title">
+        <div class="wrap case-section__grid grid">
+          <p class="case-section__rail rail label">05 — Build</p>
+          <div class="case-body content content--narrow" data-reveal>
+            <h2 id="build-title">One recipe for costing and checkout</h2>
+            <p>The Vue app converts recipe portions into the units used in inventory, so a bottle bought by the litre can be used in millilitres at the counter. The browser demo uses Pinia and local storage to keep records between visits on the same device.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section" id="results" aria-labelledby="results-title">
+        <div class="wrap case-section__grid grid">
+          <p class="case-section__rail rail label">06 — Results</p>
+          <div class="case-body content content--narrow" data-reveal>
+            <h2 id="results-title">Tracing a shortfall after closing</h2>
+            <p>Suppose the café starts with 3 litres of milk and sells ten lattes at 200 ml each. The expected balance is 1 litre. If the closing count is 700 ml, the owner has a specific 300 ml gap to investigate. Checking recorded waste, actual pours and any missed sales helps narrow down the cause.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section" id="reflection" aria-labelledby="reflection-title">
+        <div class="wrap case-section__grid grid">
+          <p class="case-section__rail rail label">07 — Reflection</p>
+          <div class="case-body content content--narrow" data-reveal>
+            <h2 id="reflection-title">A recipe is only as accurate as the pour</h2>
+            <p>A generous pour can quietly reduce the margin on every cup. Measuring a typical serving and keeping ingredient prices current makes the costing useful. A regular physical count gives the owner a way to check those assumptions against what is actually on the shelf.</p>
+          </div>
+        </div>
+      </section>
+
+      <nav class="case-next wrap" aria-label="Next case study">
+        <a class="case-next__link" href="hrpms.html">
+          <span class="label">Next case study — 05 / 05</span>
+          <span class="case-next__title">HRPMS
+            <svg class="icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg>
+          </span>
+        </a>
+      </nav>
+    </article>
+
+    <section class="wrap" aria-label="Contact">
+      <div class="cta-band grid">
+        <p class="cta-band__text">Need a system like this one?</p>
+        <div class="cta-band__actions">
+          <a class="btn btn--solid" href="mailto:johnvincentppangilinan@gmail.com?subject=Project%20inquiry">Start a conversation
+            <svg class="icon icon--right" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg>
+          </a>
+          <a class="btn btn--line" href="../assets/files/john-vincent-pangilinan-cv.pdf" download="John-Vincent-Pangilinan-CV.pdf">Résumé (PDF)
+            <svg class="icon icon--down" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2v9M4 7l4 4 4-4M3 14h10"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer statusbar">
+    <div class="wrap statusbar__inner">
+      <div class="statusbar__group">
+        <span class="sb-item"><svg class="icon" viewBox="0 0 16 16" aria-hidden="true"><circle cx="5" cy="3.5" r="1.5"/><circle cx="5" cy="12.5" r="1.5"/><circle cx="11" cy="5" r="1.5"/><path d="M5 5v6M11 6.5c0 2.5-6 2-6 4.5"/></svg>main</span>
+        <span class="sb-item"><span class="pulse" aria-hidden="true"></span>available</span>
+        <span class="sb-item">© <span data-year>2026</span> John Vincent Pangilinan</span>
+      </div>
+      <div class="statusbar__group">
+        <span class="sb-item">Biñan <span data-clock data-tz="Asia/Manila" data-suffix="GMT+8">GMT+8</span></span>
+        <span class="sb-item">UTF-8</span>
+        <button class="sb-item grid-toggle" type="button" aria-pressed="false" data-grid-toggle>grid</button>
+        <a class="sb-item" href="#top">top
+          <svg class="icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 13.5v-11M3.5 7L8 2.5 12.5 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
