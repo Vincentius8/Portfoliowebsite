@@ -2,8 +2,7 @@
 
 (() => {
   const root = document.documentElement;
-  // Paste the public HRPMS website URL between the quotes when it is ready.
-  const hrpmsDemoUrl = '';
+  const hrpmsDemoUrl = 'https://hrpmsfe.vercel.app/';
   if (hrpmsDemoUrl) {
     document.querySelectorAll('[data-hrpms-demo]').forEach(link => {
       link.href = hrpmsDemoUrl;
